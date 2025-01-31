@@ -3,10 +3,30 @@
 footer {
     display: flex;
     padding-block: 24px;
+    padding-inline: 32px;
     gap: 24px;
     font: 14px/150% var(--font-family);
 }
 
 footer span:nth-child(1) {
     margin-right: auto;
+}
+
+@media (width < 676px) {
+    footer {
+        width: 100%;
+        gap: 16px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer span:nth-child(1) {
+        margin-right: 0;
+    }
+
+    footer div {
+        display: flex;
+        gap: 16px;
+    }
 }

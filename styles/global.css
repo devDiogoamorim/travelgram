@@ -14,10 +14,10 @@
     --text-color-secondary: #6C6C6C;
 
     --font-family: "Poppins", sans-serif;
-    --text-lg: bold 32px/125% var(--font-family);
-    --text: 16px/150% var(--font-family);
-    --text-md: 14px/170% var(--font-family);
-    --text-sm: 12px/175% var(--font-family);
+    --text-lg: bold 2rem/125% var(--font-family);
+    --text: 1rem/150% var(--font-family);
+    --text-md: 0.875rem/170% var(--font-family);
+    --text-sm: 0.75rem/175% var(--font-family);
 }
 
 body {
@@ -45,4 +45,14 @@ a:hover {
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+@media (width < 64.625em) {
+    :root {
+        --text-lg: bold 1.5rem/125% var(--font-family);
+    }
+
+    .desktop-only {
+        display: none;
+    }
 }

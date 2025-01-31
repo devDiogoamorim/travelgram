@@ -47,3 +47,15 @@ header .container {
     align-items: center;
     gap: 8px;
 }
+
+@media (width < 64.625em) {
+    header .container {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    #profile {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
